@@ -1,0 +1,3 @@
+evaluation,filter,rmse,mae,r2,n,kpi_minimum,kpi_excellent,status
+raw,none,8.00212930431403,3.1732990707989512,0.11233728151932076,403,RMSE <= 6 ug/m3,RMSE <= 3 ug/m3,no_cumple
+qa_filtered,observed <= 60,3.8970463534712865,2.5087585648180997,0.17988064076784815,399,RMSE <= 6 ug/m3,RMSE <= 3 ug/m3,cumple_minimo

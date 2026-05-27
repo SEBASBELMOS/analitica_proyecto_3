@@ -1,0 +1,11 @@
+{
+  "task": "MD5 checkpoint final v10/v5b seed57 full logging",
+  "checkpoint_best": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_fusion_ksae_v10_v5b_gsplit_seed57_full_logging/seed57_k12_drop25_wd1e3_full_logging_best.pt",
+  "checkpoint_last": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_fusion_ksae_v10_v5b_gsplit_seed57_full_logging/seed57_k12_drop25_wd1e3_full_logging_last.pt",
+  "checkpoint_best_md5": "461bd40ef53051c9b6fca15685fee3d5",
+  "checkpoint_last_md5": "3d5ec164f9c0d1fe10f79d29d14b1b84",
+  "checkpoint_best_size_mb": 9.028,
+  "checkpoint_last_size_mb": 9.028,
+  "md5_recomputed_after_write": "461bd40ef53051c9b6fca15685fee3d5",
+  "md5_match": true
+}

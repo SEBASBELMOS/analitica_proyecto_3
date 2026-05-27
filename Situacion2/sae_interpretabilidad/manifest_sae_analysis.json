@@ -1,0 +1,280 @@
+{
+  "checkpoint": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_fusion_ksae_v10_v5b_gsplit_seed57_full_logging/seed57_k12_drop25_wd1e3_full_logging_best.pt",
+  "dataset": "/workspace/geovision-cali-hf/outputs/clip_dataset_final_step_by_step/clip_s2_12band_pdf_classes_v5b_high_purity_1500_gsplit",
+  "embedding_npz": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_v10_v5b_embeddings/embeddings_remoteclip_v10_v5b.npz",
+  "config": {
+    "name": "seed57_k12_drop25_wd1e3_full_logging",
+    "k_frac": 0.12,
+    "l1": 0.004,
+    "alpha": 0.1,
+    "lr": 0.00015,
+    "wd": 0.001,
+    "drop": 0.25,
+    "epochs": 90,
+    "batch": 64,
+    "seed_offset": 57
+  },
+  "classes": [
+    "contaminacion_alta_NO2",
+    "contaminacion_alta_SO2",
+    "ozono_anomalo",
+    "suelo_urbano",
+    "vegetacion_densa"
+  ],
+  "reports": {
+    "train": {
+      "contaminacion_alta_NO2": {
+        "precision": 0.9855769230769231,
+        "recall": 0.9669811320754716,
+        "f1-score": 0.9761904761904762,
+        "support": 212.0
+      },
+      "contaminacion_alta_SO2": {
+        "precision": 0.9695431472081218,
+        "recall": 0.955,
+        "f1-score": 0.9622166246851386,
+        "support": 200.0
+      },
+      "ozono_anomalo": {
+        "precision": 0.9431818181818182,
+        "recall": 0.9822485207100592,
+        "f1-score": 0.9623188405797102,
+        "support": 169.0
+      },
+      "suelo_urbano": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 210.0
+      },
+      "vegetacion_densa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 209.0
+      },
+      "accuracy": 0.981,
+      "macro avg": {
+        "precision": 0.9796603776933726,
+        "recall": 0.9808459305571062,
+        "f1-score": 0.980145188291065,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 0.9812486644066594,
+        "recall": 0.981,
+        "f1-score": 0.9810275899473796,
+        "support": 1000.0
+      }
+    },
+    "val": {
+      "contaminacion_alta_NO2": {
+        "precision": 0.3488372093023256,
+        "recall": 0.3409090909090909,
+        "f1-score": 0.3448275862068966,
+        "support": 44.0
+      },
+      "contaminacion_alta_SO2": {
+        "precision": 0.17307692307692307,
+        "recall": 0.18,
+        "f1-score": 0.17647058823529413,
+        "support": 50.0
+      },
+      "ozono_anomalo": {
+        "precision": 0.6805555555555556,
+        "recall": 0.6049382716049383,
+        "f1-score": 0.6405228758169934,
+        "support": 81.0
+      },
+      "suelo_urbano": {
+        "precision": 0.6341463414634146,
+        "recall": 0.5777777777777777,
+        "f1-score": 0.6046511627906976,
+        "support": 45.0
+      },
+      "vegetacion_densa": {
+        "precision": 0.5087719298245614,
+        "recall": 0.6444444444444445,
+        "f1-score": 0.5686274509803921,
+        "support": 45.0
+      },
+      "accuracy": 0.4830188679245283,
+      "macro avg": {
+        "precision": 0.469077591844556,
+        "recall": 0.4696139169472503,
+        "f1-score": 0.4670199328060548,
+        "support": 265.0
+      },
+      "weighted avg": {
+        "precision": 0.49267549272116,
+        "recall": 0.4830188679245283,
+        "f1-score": 0.48556918402167415,
+        "support": 265.0
+      }
+    },
+    "test": {
+      "contaminacion_alta_NO2": {
+        "precision": 0.4166666666666667,
+        "recall": 0.22727272727272727,
+        "f1-score": 0.29411764705882354,
+        "support": 44.0
+      },
+      "contaminacion_alta_SO2": {
+        "precision": 0.391304347826087,
+        "recall": 0.36,
+        "f1-score": 0.375,
+        "support": 50.0
+      },
+      "ozono_anomalo": {
+        "precision": 0.42857142857142855,
+        "recall": 0.54,
+        "f1-score": 0.4778761061946903,
+        "support": 50.0
+      },
+      "suelo_urbano": {
+        "precision": 0.8372093023255814,
+        "recall": 0.8,
+        "f1-score": 0.8181818181818182,
+        "support": 45.0
+      },
+      "vegetacion_densa": {
+        "precision": 0.6440677966101694,
+        "recall": 0.8260869565217391,
+        "f1-score": 0.7238095238095238,
+        "support": 46.0
+      },
+      "accuracy": 0.548936170212766,
+      "macro avg": {
+        "precision": 0.5435639083999867,
+        "recall": 0.5506719367588933,
+        "f1-score": 0.5377970190489713,
+        "support": 235.0
+      },
+      "weighted avg": {
+        "precision": 0.5388453591571407,
+        "recall": 0.548936170212766,
+        "f1-score": 0.5348868157180539,
+        "support": 235.0
+      }
+    }
+  },
+  "confusion_matrices": {
+    "train": [
+      [
+        205,
+        3,
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        191,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        166,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        210,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        209
+      ]
+    ],
+    "val": [
+      [
+        15,
+        14,
+        8,
+        4,
+        3
+      ],
+      [
+        5,
+        9,
+        8,
+        10,
+        18
+      ],
+      [
+        7,
+        17,
+        49,
+        1,
+        7
+      ],
+      [
+        14,
+        3,
+        2,
+        26,
+        0
+      ],
+      [
+        2,
+        9,
+        5,
+        0,
+        29
+      ]
+    ],
+    "test": [
+      [
+        10,
+        15,
+        12,
+        1,
+        6
+      ],
+      [
+        2,
+        18,
+        20,
+        2,
+        8
+      ],
+      [
+        8,
+        5,
+        27,
+        4,
+        6
+      ],
+      [
+        2,
+        3,
+        3,
+        36,
+        1
+      ],
+      [
+        2,
+        5,
+        1,
+        0,
+        38
+      ]
+    ]
+  },
+  "outputs": {
+    "split_summary": "/workspace/geovision-cali-hf/outputs/sae_analysis_v10_v5b_gsplit_seed57_full_logging/sae_split_summary.csv",
+    "top_units_by_class": "/workspace/geovision-cali-hf/outputs/sae_analysis_v10_v5b_gsplit_seed57_full_logging/sae_top_units_by_class.csv",
+    "pair_top_units": "/workspace/geovision-cali-hf/outputs/sae_analysis_v10_v5b_gsplit_seed57_full_logging/sae_pair_top_units.csv",
+    "heatmap": "/workspace/geovision-cali-hf/outputs/sae_analysis_v10_v5b_gsplit_seed57_full_logging/sae_top_units_by_class_heatmap.png"
+  }
+}

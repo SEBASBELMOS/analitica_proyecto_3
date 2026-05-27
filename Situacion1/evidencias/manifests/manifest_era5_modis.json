@@ -1,0 +1,140 @@
+{
+  "proyecto": "GeoVision-CLIP Cali",
+  "tarea": "1.4 Descarga ERA5-Land + MODIS MAIAC",
+  "periodo": {
+    "inicio": "2020-01-01",
+    "fin": "2024-12-31"
+  },
+  "bbox": {
+    "west": -76.6,
+    "south": 3.3,
+    "east": -76.4,
+    "north": 3.55
+  },
+  "archivos": [
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/era5_modis/era5_land_cali_hourly_2020_2024.csv",
+      "fuente": "ERA5-Land",
+      "descripcion": "Meteorología horaria promedio bbox Cali-Yumbo CSV",
+      "bbox": {
+        "west": -76.6,
+        "south": 3.3,
+        "east": -76.4,
+        "north": 3.55
+      },
+      "size_bytes": 5656711,
+      "size_mb": 5.395,
+      "md5": "65bf6c788b8b5186653df2b60081fa77",
+      "created_at": "2026-05-20T11:10:46.260833Z"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/era5_modis/era5_land_cali_hourly_2020_2024.parquet",
+      "fuente": "ERA5-Land",
+      "descripcion": "Meteorología horaria promedio bbox Cali-Yumbo Parquet",
+      "bbox": {
+        "west": -76.6,
+        "south": 3.3,
+        "east": -76.4,
+        "north": 3.55
+      },
+      "size_bytes": 3099791,
+      "size_mb": 2.956,
+      "md5": "99b089fa996344dc1dc6da336fc0cc93",
+      "created_at": "2026-05-20T11:10:46.276724Z"
+    },
+    {
+      "ruta": "data/era5_modis/modis_maiac_aod_cali_daily_full_2020_2024.csv",
+      "fuente": "MODIS MAIAC MCD19A2",
+      "descripcion": "AOD diario final bbox Cali CSV",
+      "bbox": {
+        "west": -76.6,
+        "south": 3.3,
+        "east": -76.4,
+        "north": 3.55
+      },
+      "size_bytes": 370868,
+      "size_mb": 0.354,
+      "md5": "15379664c538ea385835a152346edb2f",
+      "created_at": "2026-05-20T11:10:46.281028Z"
+    },
+    {
+      "ruta": "data/era5_modis/modis_maiac_aod_cali_daily_full_2020_2024.parquet",
+      "fuente": "MODIS MAIAC MCD19A2",
+      "descripcion": "AOD diario final bbox Cali Parquet",
+      "bbox": {
+        "west": -76.6,
+        "south": 3.3,
+        "east": -76.4,
+        "north": 3.55
+      },
+      "size_bytes": 115486,
+      "size_mb": 0.11,
+      "md5": "1f634c08b19c0660543c98be1f198722",
+      "created_at": "2026-05-20T11:10:46.284019Z"
+    }
+  ],
+  "variables_era5": [
+    "fecha_hora",
+    "temperature_2m_c",
+    "dewpoint_2m_c",
+    "relative_humidity_pct",
+    "u10_m_s",
+    "v10_m_s",
+    "wind_speed_10m",
+    "wind_direction_10m_deg",
+    "surface_pressure_hpa",
+    "total_precipitation_mm_raw",
+    "total_precipitation_mm_hourly",
+    "surface_solar_radiation_downwards_j_m2"
+  ],
+  "variables_modis": [
+    "aod_047_mean",
+    "aod_055_mean",
+    "date",
+    "n_observations",
+    "aod_disponible",
+    "year",
+    "month",
+    "dayofyear",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos",
+    "aod_047_observado",
+    "aod_055_observado",
+    "aod_047_interp",
+    "aod_055_interp",
+    "aod_origen"
+  ],
+  "calidad_era5": {
+    "shape": [
+      43848,
+      12
+    ],
+    "fecha_min": "2020-01-01 00:00:00",
+    "fecha_max": "2024-12-31 23:00:00",
+    "nulos_precipitacion_horaria": 1
+  },
+  "calidad_modis": {
+    "shape": [
+      1827,
+      17
+    ],
+    "fecha_min": "2020-01-01 00:00:00",
+    "fecha_max": "2024-12-31 00:00:00",
+    "dias_totales": 1827,
+    "dias_con_aod_observado": 1060,
+    "dias_sin_aod_observado": 767,
+    "pct_dias_con_aod": 58.01860974274767,
+    "racha_max_sin_aod_dias": 9
+  },
+  "notas": [
+    "ERA5-Land fue descargado por CDS API y agregado espacialmente como promedio del bounding box Cali-Yumbo.",
+    "Los archivos ERA5-Land se descargaron por mes y venían comprimidos como ZIP con archivo interno data_0.nc; se extrajeron con nombres únicos.",
+    "La precipitación horaria se calculó por diferencia entre acumulados consecutivos y la primera hora se dejó como NaN.",
+    "MODIS MAIAC MCD19A2 fue consultado con Google Earth Engine.",
+    "Para MODIS se usaron las bandas Optical_Depth_047 y Optical_Depth_055 con factor de escala 0.001.",
+    "MODIS se agregó primero a escala diaria dentro de Earth Engine para evitar el límite de 5000 elementos.",
+    "Se conservaron columnas observadas e interpoladas para AOD, manteniendo trazabilidad con aod_origen y aod_disponible."
+  ]
+}

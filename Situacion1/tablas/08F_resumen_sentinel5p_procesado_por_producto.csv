@@ -1,0 +1,4 @@
+producto,n_archivos,tamano_total_mb,fecha_min,fecha_max,archivos_con_fecha
+NO2,1850,5.12,2020-01-01,2024-12-31,1826
+O3,1851,5.1228,2020-01-01,2024-12-31,1827
+SO2,1851,5.1228,2020-01-01,2024-12-31,1827

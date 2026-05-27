@@ -1,0 +1,50 @@
+{
+  "tensor_zarr": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/25_spatial_embedding_tensors_full_covariates/spatial_embedding_tensors_len8_h_256_targets_t1_t3_t7.zarr",
+  "metadata": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/25_spatial_embedding_tensors_full_covariates/metadata_spatial_embedding_tensors_len8.csv",
+  "device": "cuda",
+  "x_shape": [
+    119,
+    8,
+    273,
+    48,
+    40
+  ],
+  "y_shape": [
+    119,
+    3,
+    3,
+    48,
+    40
+  ],
+  "split": {
+    "train": 83,
+    "val": 17,
+    "test": 19
+  },
+  "y_scale": {
+    "mean": 17.471942901611328,
+    "std": 14.660791397094727
+  },
+  "architecture": {
+    "bidirectional": true,
+    "input_channels": 273,
+    "hidden": 128,
+    "kernel": 3,
+    "layers": 2,
+    "output": "B x 3 x 3 x H x W"
+  },
+  "best_epoch": 9,
+  "best_val_loss": 0.14290568977594376,
+  "test_loss_scaled": 0.26325728861909165,
+  "test_metrics_all": {
+    "scope": "all",
+    "pollutant": "all",
+    "horizon_days": "all",
+    "rmse": 7.539575304369847,
+    "mae": 5.457334518432617,
+    "r2": 0.6999095380306244,
+    "n": 501
+  },
+  "checkpoint": "checkpoints/convlstm_covariates_spatial_best.pt",
+  "note_no2": "NO2 has only one available DAGMA station in current inputs; spatial LOO-CV for NO2 is not defensible and must be reported as a data limitation."
+}

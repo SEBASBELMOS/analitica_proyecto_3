@@ -1,0 +1,2 @@
+diagnostico,valor,criterio_referencia,cumple_referencia,nota
+SRMR,0.1457552655496196,< 0.08,False,"Diagnostico adicional solicitado en validacion AFC; no aparece como KPI en la tabla de KPIs de Situacion 2. Se reporta como limitacion del ajuste residual, no como incumplimiento de KPI."

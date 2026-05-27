@@ -1,0 +1,119 @@
+{
+  "proyecto": "GeoVision-CLIP Cali",
+  "componente": "DAGMA/SISAIRE in-situ NO2 SO2 O3",
+  "periodo": {
+    "inicio": "2020-01-01 00:00:00",
+    "fin": "2024-12-31 23:00:00"
+  },
+  "reglas_limpieza": [
+    "Se integran tres fuentes: Excel SVCASC, API y reportes SISAIRE O3/SO2.",
+    "Se eliminan registros del municipio de Yumbo.",
+    "Se conservan solo registros asociados a Cali/Santiago de Cali.",
+    "Se elimina la estación Cascajal.",
+    "El Excel nuevo se limita al rango 2020-01-01 a 2024-12-31 23:00.",
+    "Se conservan solo NO2, SO2 y O3.",
+    "Valores negativos se convierten a NaN.",
+    "Deduplicación por fecha_hora + estacion + contaminante con prioridad: SVCASC > API > SISAIRE."
+  ],
+  "n_filas_largo": 803146,
+  "n_columnas_largo": 14,
+  "n_filas_ancho": 278618,
+  "n_columnas_ancho": 11,
+  "estaciones_finales": [
+    "Base Aerea",
+    "Canaveralejo",
+    "Compartir",
+    "ERA - Obrero",
+    "Ermita",
+    "Flora",
+    "Pance",
+    "Transitoria - Navarro",
+    "Univalle"
+  ],
+  "contaminantes": [
+    "NO2",
+    "SO2",
+    "O3"
+  ],
+  "archivos_entrada": [
+    "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/nuevo/SVCASC_FT_50-Datos_Monitores_SVCASC_2020-2025.xlsx",
+    "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/api/panel_horario_dagma_sisaire_cali_yumbo_insitu_2020_2024.csv",
+    "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/o3",
+    "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/so2"
+  ],
+  "archivos_salida": [
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/panel_dagma_sisaire_largo_2020_2024.parquet",
+      "fuente": "DAGMA/SISAIRE",
+      "descripcion": "Panel largo limpio",
+      "size_bytes": 1507427,
+      "size_mb": 1.438,
+      "md5": "9895ea9786fd79e22fc98ea554f90b75"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/panel_dagma_sisaire_largo_2020_2024.csv",
+      "fuente": "DAGMA/SISAIRE",
+      "descripcion": "Panel largo limpio CSV",
+      "size_bytes": 85119418,
+      "size_mb": 81.176,
+      "md5": "f077f0e36dcf37b9175c733dbfb31203"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/panel_dagma_sisaire_ancho_2020_2024.parquet",
+      "fuente": "DAGMA/SISAIRE",
+      "descripcion": "Panel ancho limpio",
+      "size_bytes": 1641565,
+      "size_mb": 1.566,
+      "md5": "bedfacc54db156c24d2e209d4d7305d5"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/panel_dagma_sisaire_ancho_2020_2024.csv",
+      "fuente": "DAGMA/SISAIRE",
+      "descripcion": "Panel ancho limpio CSV",
+      "size_bytes": 22923425,
+      "size_mb": 21.861,
+      "md5": "4c2283e209a49209cb99a55a97923e50"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/resumen_calidad_dagma_sisaire_2020_2024.csv",
+      "fuente": "DAGMA/SISAIRE",
+      "descripcion": "Resumen de calidad por estación y contaminante",
+      "size_bytes": 4249,
+      "size_mb": 0.004,
+      "md5": "912262d962b0a6b9f9242a38a4117e3e"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/resumen_calidad_por_contaminante_dagma_sisaire_2020_2024.csv",
+      "fuente": "DAGMA/SISAIRE",
+      "descripcion": "Resumen de calidad por contaminante",
+      "size_bytes": 496,
+      "size_mb": 0.0,
+      "md5": "f80b921fafae45d3aae7ad36a2f3c1ff"
+    }
+  ],
+  "estaciones_en_panel_largo": [
+    "Base Aerea",
+    "Canaveralejo",
+    "Compartir",
+    "ERA - Obrero",
+    "Ermita",
+    "Flora",
+    "Pance",
+    "TRANSITORIA-NAVARRO",
+    "Transitoria - Navarro",
+    "Univalle"
+  ],
+  "estaciones_en_panel_ancho": [
+    "Base Aerea",
+    "Canaveralejo",
+    "Compartir",
+    "ERA - Obrero",
+    "Ermita",
+    "Flora",
+    "Pance",
+    "TRANSITORIA-NAVARRO",
+    "Transitoria - Navarro",
+    "Univalle"
+  ],
+  "nota_estaciones": "Los paneles DAGMA intermedios conservan TRANSITORIA-NAVARRO y Transitoria - Navarro como etiquetas separadas; el panel GOLD posterior las unifica en Transitoria - Navarro y queda con 9 estaciones finales."
+}

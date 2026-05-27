@@ -1,0 +1,11 @@
+metrica,valor
+filas_totales,278618
+columnas_totales,104
+fecha_min,2020-01-01 00:00:00
+fecha_max,2024-12-31 23:00:00
+anios_disponibles,"2020, 2021, 2022, 2023, 2024"
+estaciones_unicas,9
+lat_min,3.304517
+lat_max,3.488218
+lon_min,-76.549613
+lon_max,-76.466584

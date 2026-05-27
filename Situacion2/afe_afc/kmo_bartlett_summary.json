@@ -1,0 +1,54 @@
+[
+  {
+    "modelo": "v8",
+    "input_npz": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_vitb32_sae_v6/embeddings_remoteclip_vitb32_sae_v6.npz",
+    "metadata": "/workspace/geovision-cali-hf/outputs/clip_dataset_final_step_by_step/clip_s2_12band_pdf_classes_1000_v2/metadata.jsonl",
+    "matriz": "remoteclip_visual_512",
+    "shape_original": [
+      1000,
+      512
+    ],
+    "shape_usada": [
+      975,
+      512
+    ],
+    "filas_cero_excluidas": 25,
+    "kmo_global": 0.8463615748399567,
+    "kmo_interpretacion": "muy_bueno",
+    "kmo_min_variable": 0.3980397261147011,
+    "kmo_mediana_variable": 0.8510172266269578,
+    "kmo_max_variable": 0.9499058317817134,
+    "bartlett_chi2": Infinity,
+    "bartlett_dof": 130816,
+    "bartlett_p_value": 0.0,
+    "bartlett_significativo_0_05": true,
+    "bartlett_origen": "factor_analyzer",
+    "nota": "baseline v8; se filtran tiles visualmente cero por metadata image_max/image_std como en el análisis PCA/AFE/AFC principal"
+  },
+  {
+    "modelo": "v10_v5b",
+    "input_npz": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_v10_v5b_embeddings/embeddings_remoteclip_v10_v5b.npz",
+    "metadata": "/workspace/geovision-cali-hf/outputs/clip_dataset_final_step_by_step/clip_s2_12band_pdf_classes_v5b_high_purity_1500_gsplit/metadata.jsonl",
+    "matriz": "remoteclip_visual_512",
+    "shape_original": [
+      1500,
+      512
+    ],
+    "shape_usada": [
+      1500,
+      512
+    ],
+    "filas_cero_excluidas": 0,
+    "kmo_global": 0.8522400322681704,
+    "kmo_interpretacion": "muy_bueno",
+    "kmo_min_variable": 0.3859288132093319,
+    "kmo_mediana_variable": 0.8581669185618064,
+    "kmo_max_variable": 0.9592784571147004,
+    "bartlett_chi2": Infinity,
+    "bartlett_dof": 130816,
+    "bartlett_p_value": 0.0,
+    "bartlett_significativo_0_05": true,
+    "bartlett_origen": "factor_analyzer",
+    "nota": "modelo robusto v10/v5b; no se esperan filas cero"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "variograms": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/21_st_kriging_residual_corrected_maps/experimental_variograms.csv",
+  "out": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms",
+  "n_png": 9,
+  "png_outputs": [
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_NO2_t1.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_NO2_t3.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_NO2_t7.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_O3_t1.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_O3_t3.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_O3_t7.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_SO2_t1.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_SO2_t3.png",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/24_figuras_mapas_finales/variograms/variogram_SO2_t7.png"
+  ]
+}

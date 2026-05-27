@@ -1,0 +1,9 @@
+bloque,n_columnas,contenido
+Llaves y tiempo,10,"fecha_hora, date, hour, estacion, lat/lon"
+DAGMA/SISAIRE,3,"NO2, SO2, O3 in-situ"
+ERA5-Land,11,"temperatura, humedad, viento, presion, lluvia, radiacion"
+MODIS MAIAC,12,AOD 047/055 observado e interpolado
+Sentinel-5P,14,"tile, distancia, QA y disponibilidad; sin columnas directas de contaminantes"
+Sentinel-2,45,"bandas, NDVI, NDBI, BSI, nubosidad, distancia temporal"
+Ciclos temporales,4,"month_sin/cos, doy_sin/cos"
+Total panel model-safe,102,"278,618 filas estacion-hora; periodo 2020-01-01 a 2024-12-31; 9 estaciones"

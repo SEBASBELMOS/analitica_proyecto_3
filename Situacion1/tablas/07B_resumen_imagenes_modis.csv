@@ -1,0 +1,10 @@
+metrica,valor
+n_archivos_imagen_raster,1120
+formatos_detectados,".nc, .tif"
+tamano_total_mb,16.401
+tamano_promedio_mb,0.015
+fecha_min_inferida,2020-01-01 00:00:00
+fecha_max_inferida,2024-12-25 00:00:00
+archivos_con_fecha_inferida,1060
+archivos_sin_fecha_inferida,60
+carpetas_unicas,2

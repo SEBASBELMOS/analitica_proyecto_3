@@ -1,0 +1,9 @@
+fuente_probable,n_variables,promedio_nulos
+Sentinel-2,45,7.390522222222223
+Sentinel-5P,14,0.05108571428571429
+Temporal/metadatos,13,0.7461923076923077
+ERA5-Land,11,0.00022727272727272727
+MODIS/MAIAC,10,16.5326
+Otra,5,0.0
+Espacial/metadatos,3,0.0
+DAGMA/SISAIRE,3,58.13493333333333

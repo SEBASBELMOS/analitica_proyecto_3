@@ -1,0 +1,10 @@
+pollutant,horizon_days,n_residual_points,n_unique_stations,target_date,variogram_model,status
+NO2,1,80,1,2024-12-17,linear,ok
+NO2,3,79,1,2024-12-19,linear,ok
+NO2,7,85,1,2024-12-23,linear,ok
+SO2,1,403,5,2024-12-17,linear,ok
+SO2,3,403,5,2024-12-19,linear,ok
+SO2,7,411,5,2024-12-23,linear,ok
+O3,1,481,6,2024-12-17,linear,ok
+O3,3,479,6,2024-12-19,linear,ok
+O3,7,474,6,2024-12-23,linear,ok

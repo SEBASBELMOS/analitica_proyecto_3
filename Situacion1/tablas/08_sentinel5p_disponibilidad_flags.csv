@@ -1,0 +1,5 @@
+variable,n_registros,n_true,n_false,porcentaje_true,porcentaje_nulos
+s5p_available_no2,1270896,1270896,0,100.0,0.0
+s5p_available_so2,1270896,1270896,0,100.0,0.0
+s5p_available_o3,1270896,1270896,0,100.0,0.0
+s5p_qa_available,1270896,1270896,0,100.0,0.0

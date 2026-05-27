@@ -1,0 +1,2 @@
+componente,estado,motivo,impacto
+preview_modis_maiac_geotiff,omitido,rasterio no esta instalado en el entorno de ejecucion,No afecta KPIs ni trazabilidad; solo omite la previsualizacion GeoTIFF opcional.

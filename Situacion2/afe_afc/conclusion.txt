@@ -1,0 +1,1 @@
+El análisis principal usa remoteclip_visual_512 de v10/v5b con 1500 tiles válidos y 512 dimensiones. PCA/AFE retiene 39 factores para alcanzar 0.8013 de varianza acumulada. El mejor AFC obtiene RMSEA=0.0312, CFI=0.9465 y SRMR=0.1458. Según los criterios explícitos del PDF, hay evidencia mínima defendible de validez de constructo.

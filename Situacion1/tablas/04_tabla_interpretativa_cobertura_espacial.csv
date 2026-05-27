@@ -1,0 +1,5 @@
+fuente,existe,col_lat,col_lon,n_puntos,lat_min,lat_max,lon_min,lon_max,tipo_cobertura,interpretacion
+DAGMA/SISAIRE,True,lat,lon,9.0,3.304517,3.488218,-76.549613,-76.466584,Con coordenadas explícitas,Fuente con coordenadas explícitas y cobertura espacial verificable.
+ERA5-Land,True,,,,,,,,Sin coordenadas explícitas en el archivo consolidado,Fuente sin coordenadas explícitas en el archivo consolidado; su cobertura espacial depende del recorte/procesamiento previo.
+MODIS MAIAC AOD consolidado,True,,,,,,,,Sin coordenadas explícitas en el archivo consolidado,Fuente sin coordenadas explícitas en el archivo consolidado; su cobertura espacial depende del recorte/procesamiento previo.
+Sentinel-5P,True,s5p_lat_center,s5p_lon_center,696.0,3.3043103218078613,3.545689582824707,-76.59583282470703,-76.40416717529297,Con coordenadas explícitas,Fuente con coordenadas explícitas y cobertura espacial verificable.

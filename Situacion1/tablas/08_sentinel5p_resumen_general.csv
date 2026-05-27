@@ -1,0 +1,15 @@
+metrica,valor
+filas_totales,1270896
+columnas_totales,21
+variables_contaminantes,"s5p_no2_column, s5p_so2_column, s5p_o3_column"
+variables_qa,"s5p_qa_no2, s5p_qa_so2, s5p_qa_o3"
+variables_disponibilidad,"s5p_available_no2, s5p_available_so2, s5p_available_o3, s5p_qa_available"
+fecha_min,2020-01-01 00:00:00
+fecha_max,2024-12-31 00:00:00
+anios_disponibles,"2020, 2021, 2022, 2023, 2024"
+lat_min,3.3043103
+lat_max,3.5456896
+lon_min,-76.59583
+lon_max,-76.40417
+puntos_espaciales_unicos,696
+tipo_cobertura,Tabla con coordenadas explícitas

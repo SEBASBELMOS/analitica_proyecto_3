@@ -1,0 +1,8 @@
+{
+  "out": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/12_sentinel2_zarr_cache_cali_bbox",
+  "n_requested": 198,
+  "n_cached": 198,
+  "n_errors": 0,
+  "total_size_mb": 24987.495000000003,
+  "manifest": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/12_sentinel2_zarr_cache_cali_bbox/zarr_scene_cache_manifest.csv"
+}

@@ -1,0 +1,7 @@
+metrica,valor
+rasters_validados,50
+rasters_legibles,50
+crs_detectados,EPSG:4326
+anchos_unicos,24
+altos_unicos,29
+bandas_unicas,2

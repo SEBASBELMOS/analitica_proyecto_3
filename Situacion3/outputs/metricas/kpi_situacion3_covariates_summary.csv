@@ -1,0 +1,10 @@
+kpi,minimum,excellent,value,status,evidence
+RMSE LOO-CV NO2 T+1,<= 8 ug/m3,<= 4 ug/m3,,no_evaluable,NO2 tiene una sola estacion; LOO-CV espacial no defendible.
+RMSE LOO-CV SO2 T+1,<= 6 ug/m3,<= 3 ug/m3,3.8655543030482655,cumple_minimo,Modelo covariado h256 + S2/SCL/calendario; LOO-CV espacial vs DAGMA.
+RMSE LOO-CV O3 T+1,<= 12 ug/m3,<= 6 ug/m3,8.579906560136529,cumple_minimo,Modelo covariado h256 + S2/SCL/calendario; LOO-CV espacial vs DAGMA.
+R2 LOO-CV promedio contaminantes evaluables,>= 0.55,>= 0.75,0.8025079117946723,excelente,Calculado sobre SO2+O3; NO2 excluido por n=1 estacion.
+Indice Moran I predicciones,"> 0.30, p < 0.05","> 0.50, p < 0.05",min I=0.898; max p=0.001; 9/9 mapas,excelente,esda.Moran con permutation test n=999.
+Variograma residuos nugget puro / sin estructura,sin estructura,sin estructura,1/6 sin estructura en SO2/O3 LOO covariado,no_cumple,Clasificacion distancia-semivarianza sobre residuos LOO covariados; persiste estructura residual.
+Cobertura cinturon 95% sigma kriging,>= 92%,>= 95%,0.938513768389287,cumple_minimo,Empirico LOO-CV SO2+O3 usando |obs-pred| <= 1.96*sigma_kriging.
+Degradacion T+1 a T+7 RMSE,< 60% aumento,< 30% aumento,0.0030800037675209335,excelente,Ratio RMSE T+7/T+1 sobre SO2 y O3 covariado.
+Latencia inferencia end-to-end,< 8 s,< 3 s,,pendiente_backend,No medible sin API/backend final.

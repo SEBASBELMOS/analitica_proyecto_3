@@ -1,0 +1,12 @@
+metrica,valor
+archivo,modis_maiac_aod_2022-08-23.tif
+crs,EPSG:4326
+bounds_left,-76.6083274297128
+bounds_bottom,3.296817092718644
+bounds_right,-76.39273176152412
+bounds_top,3.5573285251133053
+width,24
+height,29
+bandas,2
+nodata,0.0
+archivo_previsualizado,/workspace/geovision-cali-hf/data/modis/modis_maiac_aod_2022-08-23.tif

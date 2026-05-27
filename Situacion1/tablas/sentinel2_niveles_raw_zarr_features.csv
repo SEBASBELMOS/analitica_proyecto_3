@@ -1,0 +1,4 @@
+nivel,ruta,uso_en_eda,peso_gb_local,volumen_documentado_gb
+Raw manifest,data/sentinel2_pipeline_reproducibilidad/manifests_s2_12band_raw/scene_manifest.jsonl,Evidencia de volumen bruto >= 50 GB y trazabilidad por escena/banda,0.001,93.1
+Zarr optimizado Situacion 3,outputs/situacion3/rubrica/12_sentinel2_zarr_cache_cali_bbox,"Visualizacion Sentinel-2, auditoria de escenas/bandas/SCL y lectura por chunks",26.201,
+Features tabulares,data/sentinel2-sentinel-5p/csv/sentinel2_daily_coverage_corregido.csv,"Cobertura diaria, nubosidad, pixeles validos e indices agregados",0.0,

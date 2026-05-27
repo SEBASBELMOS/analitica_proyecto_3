@@ -1,0 +1,8 @@
+{
+  "checkpoint": "outputs/clip_training_remoteclip_fusion_ksae_v10_v5b_gsplit_seed_sweep/seed57_k12_drop25_wd1e3_best.pt",
+  "expected_md5": "2a512b70e4a837a0c652aa71f2c970b4",
+  "calculated_md5": "2a512b70e4a837a0c652aa71f2c970b4",
+  "md5_match": true,
+  "test_recall_at_1_image_to_text": 0.6042553186416626,
+  "source_metrics": "Entrega_Final/Situacion2/metricas/sweep_best_metrics.json"
+}

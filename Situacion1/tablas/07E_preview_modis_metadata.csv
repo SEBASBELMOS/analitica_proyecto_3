@@ -1,0 +1,17 @@
+metrica,valor
+archivo,modis_maiac_aod_2022-08-23.tif
+crs,EPSG:4326
+bounds_left,-76.6083274297128
+bounds_bottom,3.296817092718644
+bounds_right,-76.39273176152412
+bounds_top,3.5573285251133053
+width,24
+height,29
+bandas,2
+nodata,0.0
+band1_min,0.001
+band1_max,0.498
+band1_mean,0.14130459770114942
+band2_min,0.001
+band2_max,0.361
+band2_mean,0.10159386973180078

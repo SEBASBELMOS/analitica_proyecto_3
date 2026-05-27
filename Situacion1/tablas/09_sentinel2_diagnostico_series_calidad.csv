@@ -1,0 +1,4 @@
+variable,dtype_original,n_total,n_validos_numericos,porcentaje_nulos_o_no_numericos,min,mediana,max
+s2_n_grids_available_day,int64,129,129,0.0,2.0,1982.0,2000.0
+s2_cloud_pct_mean,float64,129,129,0.0,4.3875,44.11,59.78
+s2_valid_pixel_pct_mean,float64,129,129,0.0,12.268518,94.899605,99.9995

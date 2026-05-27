@@ -1,0 +1,2 @@
+registros_manifest_zarr,registros_ok,columnas,columnas_tipo_ruta,date_min,date_max,anios,tiles
+171,171,10,"zarr_path, zarr_size_bytes",2020-01-02,2024-08-08,"2020, 2021, 2022, 2023, 2024","MGRS-18NUJ, MGRS-18NUK"

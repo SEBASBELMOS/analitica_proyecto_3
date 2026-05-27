@@ -1,0 +1,9 @@
+{
+  "kpi_csv": "outputs/situacion3/rubrica/40_loo_spatial_st_kriging_cv_covariates_physical_bounds/kpi_situacion3_physical_bounds_summary.csv",
+  "status_counts": {
+    "cumple_minimo": 3,
+    "excelente": 4,
+    "no_evaluable": 1,
+    "no_cumple": 1
+  }
+}

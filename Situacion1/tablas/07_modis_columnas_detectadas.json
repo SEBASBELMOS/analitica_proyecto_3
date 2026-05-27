@@ -1,0 +1,23 @@
+{
+    "col_fecha": "date",
+    "col_lat": null,
+    "col_lon": null,
+    "col_aod": "aod_047_mean",
+    "cols_numericas": [
+        "aod_047_mean",
+        "aod_055_mean",
+        "n_observations",
+        "aod_disponible",
+        "year",
+        "month",
+        "dayofyear",
+        "month_sin",
+        "month_cos",
+        "doy_sin",
+        "doy_cos",
+        "aod_047_observado",
+        "aod_055_observado",
+        "aod_047_interp",
+        "aod_055_interp"
+    ]
+}

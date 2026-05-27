@@ -1,0 +1,9 @@
+metrica,valor
+fecha_preview,2022-01-16 00:00:00
+n_registros_panel_fecha,8558
+n_puntos_espaciales_unicos,7
+lat_min,3.3024999999999998
+lat_max,3.4875
+lon_min,-76.5475
+lon_max,-76.4675
+variables_graficadas,"s2_ndvi, s2_ndbi, s2_bsi, s2_urban_index, s2_vegetation_fraction, s2_cloud_pct, s2_valid_pixel_pct"

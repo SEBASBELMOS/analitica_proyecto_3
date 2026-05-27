@@ -1,0 +1,29 @@
+{
+    "col_fecha": "date",
+    "col_lat": "s5p_lat_center",
+    "col_lon": "s5p_lon_center",
+    "cols_contaminantes": [
+        "s5p_no2_column",
+        "s5p_so2_column",
+        "s5p_o3_column"
+    ],
+    "cols_qa": [
+        "s5p_qa_no2",
+        "s5p_qa_so2",
+        "s5p_qa_o3"
+    ],
+    "cols_disponibilidad": [
+        "s5p_available_no2",
+        "s5p_available_so2",
+        "s5p_available_o3",
+        "s5p_qa_available"
+    ],
+    "cols_numericas_continuas": [
+        "s5p_no2_column",
+        "s5p_so2_column",
+        "s5p_o3_column",
+        "s5p_qa_no2",
+        "s5p_qa_so2",
+        "s5p_qa_o3"
+    ]
+}

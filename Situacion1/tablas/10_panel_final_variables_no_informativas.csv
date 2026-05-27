@@ -1,0 +1,5 @@
+criterio,resultado
+columnas_100_porcentaje_nulos,"s2_days_from_observation, s2_observed"
+n_columnas_100_porcentaje_nulos,2
+columnas_constantes_o_unicas,"s2_days_from_observation, s2_observed, s2_source, s5p_qa_available, s5p_available_no2, s5p_qa_o3, s5p_qa_no2, s5p_source, s5p_available_so2, s5p_available_o3, s5p_tile_id, s5p_qa_so2"
+n_columnas_constantes_o_unicas,12

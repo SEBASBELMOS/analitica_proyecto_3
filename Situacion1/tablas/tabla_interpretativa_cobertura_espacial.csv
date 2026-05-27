@@ -1,0 +1,5 @@
+fuente,col_lat,col_lon,n_puntos,lat_min,lat_max,lon_min,lon_max,interpretacion
+DAGMA/SISAIRE,lat,lon,9.0,3.304517,3.488218,-76.549613,-76.466584,Fuente con coordenadas detectadas y cobertura espacial verificable.
+ERA5-Land,relative_humidity_pct,,,,,,,No se detectaron columnas espaciales suficientes para verificar cobertura.
+MODIS MAIAC AOD,,,,,,,,No se detectaron columnas espaciales suficientes para verificar cobertura.
+Sentinel-5P,s5p_lat_center,s5p_lon_center,696.0,3.3043103218078613,3.545689582824707,-76.59583282470703,-76.40416717529297,Fuente con coordenadas detectadas y cobertura espacial verificable.

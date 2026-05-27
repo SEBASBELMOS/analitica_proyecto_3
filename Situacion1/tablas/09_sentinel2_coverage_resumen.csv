@@ -1,0 +1,10 @@
+metrica,valor
+formato_detectado,csv
+filas_totales,129
+columnas_totales,10
+variables_numericas,8
+variables_calidad_cobertura,"s2_n_grids_available_day, s2_cloud_pct_mean, s2_valid_pixel_pct_mean"
+columna_temporal_detectada,date
+fecha_min,2020-01-02 00:00:00
+fecha_max,2024-12-16 00:00:00
+anios_disponibles,"2020, 2021, 2022, 2023, 2024"

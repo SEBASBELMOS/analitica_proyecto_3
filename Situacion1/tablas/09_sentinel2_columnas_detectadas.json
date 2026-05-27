@@ -1,0 +1,31 @@
+{
+    "formato": "csv",
+    "col_fecha": "date",
+    "cols_numericas": [
+        "s2_n_grids_available_day",
+        "s2_cloud_pct_mean",
+        "s2_valid_pixel_pct_mean",
+        "s2_ndvi_mean",
+        "s2_bsi_mean",
+        "s2_ndbi_mean",
+        "s2_urban_index_mean",
+        "anio"
+    ],
+    "cols_calidad_cobertura": [
+        "s2_n_grids_available_day",
+        "s2_cloud_pct_mean",
+        "s2_valid_pixel_pct_mean"
+    ],
+    "columnas": [
+        "date",
+        "s2_n_grids_available_day",
+        "s2_cloud_pct_mean",
+        "s2_valid_pixel_pct_mean",
+        "s2_ndvi_mean",
+        "s2_bsi_mean",
+        "s2_ndbi_mean",
+        "s2_urban_index_mean",
+        "anio",
+        "mes"
+    ]
+}

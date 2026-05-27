@@ -1,0 +1,29 @@
+{
+  "loo_predictions": "/workspace/geovision-cali-hf/Entrega_Final/Situacion3/outputs/validacion/loo_spatial_predictions_long.csv",
+  "so2_max_valid": 60.0,
+  "n_raw": 403,
+  "n_outliers": 4,
+  "raw": {
+    "evaluation": "raw",
+    "filter": "none",
+    "rmse": 8.00212930431403,
+    "mae": 3.1732990707989512,
+    "r2": 0.11233728151932076,
+    "n": 403,
+    "kpi_minimum": "RMSE <= 6 ug/m3",
+    "kpi_excellent": "RMSE <= 3 ug/m3",
+    "status": "no_cumple"
+  },
+  "qa_filtered": {
+    "evaluation": "qa_filtered",
+    "filter": "observed <= 60",
+    "rmse": 3.8970463534712865,
+    "mae": 2.5087585648180997,
+    "r2": 0.17988064076784815,
+    "n": 399,
+    "kpi_minimum": "RMSE <= 6 ug/m3",
+    "kpi_excellent": "RMSE <= 3 ug/m3",
+    "status": "cumple_minimo"
+  },
+  "interpretation": "SO2 T+1 fails the raw KPI due to four extreme Flora-2020 observations; after explicit QA sensitivity filter observed<=60, RMSE meets the minimum threshold. This should be reported as sensitivity analysis, not as replacement for the raw KPI unless the data owner accepts the QA exclusion."
+}

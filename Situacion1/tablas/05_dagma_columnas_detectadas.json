@@ -1,0 +1,6 @@
+{
+    "col_fecha": "fecha_hora",
+    "col_estacion": "estacion",
+    "col_contaminante": "contaminante",
+    "col_valor": "valor"
+}

@@ -1,0 +1,19 @@
+{
+  "tensor_zarr": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/25_spatial_embedding_tensors_full_covariates/spatial_embedding_tensors_len8_h_256_targets_t1_t3_t7.zarr",
+  "metadata": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/25_spatial_embedding_tensors_full_covariates/metadata_spatial_embedding_tensors_len8.csv",
+  "checkpoint": "checkpoints/convlstm_covariates_spatial_best.pt",
+  "prediction_zarr": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/27_convlstm_covariates_predictions_residuals/convlstm_predictions_all_samples.zarr",
+  "residuals_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/27_convlstm_covariates_predictions_residuals/convlstm_predictions_residuals_long.csv",
+  "n_samples": 119,
+  "n_residual_rows": 2895,
+  "rows_by_pollutant": {
+    "NO2": 244,
+    "O3": 1434,
+    "SO2": 1217
+  },
+  "rows_by_horizon": {
+    "1": 964,
+    "3": 961,
+    "7": 970
+  }
+}

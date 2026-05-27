@@ -1,0 +1,9 @@
+metrica,valor
+filas_totales,803146
+registros_validos,349931
+estaciones_unicas,10
+contaminantes_unicos,3
+fecha_min,2020-01-01 00:00:00
+fecha_max,2024-12-31 23:00:00
+porcentaje_medicion_nula,56.43
+porcentaje_fecha_nula,0.0

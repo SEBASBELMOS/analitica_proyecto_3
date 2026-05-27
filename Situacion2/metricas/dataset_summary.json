@@ -1,0 +1,55 @@
+{
+  "dataset": "clip_s2_12band_pdf_classes_v5b_high_purity_1500_gsplit",
+  "source_dataset": "/workspace/geovision-cali-hf/outputs/clip_dataset_final_step_by_step/clip_s2_12band_pdf_classes_v5b_high_purity_1500",
+  "n_records": 1500,
+  "split_strategy": "scene_id_group_holdout_no_scene_overlap",
+  "class_counts": {
+    "contaminacion_alta_NO2": 300,
+    "contaminacion_alta_SO2": 300,
+    "ozono_anomalo": 300,
+    "suelo_urbano": 300,
+    "vegetacion_densa": 300
+  },
+  "split_counts": {
+    "test": 235,
+    "train": 1000,
+    "val": 265
+  },
+  "class_split_counts": {
+    "contaminacion_alta_NO2": {
+      "test": 44,
+      "train": 212,
+      "val": 44
+    },
+    "contaminacion_alta_SO2": {
+      "test": 50,
+      "train": 200,
+      "val": 50
+    },
+    "ozono_anomalo": {
+      "test": 50,
+      "train": 169,
+      "val": 81
+    },
+    "suelo_urbano": {
+      "test": 45,
+      "train": 210,
+      "val": 45
+    },
+    "vegetacion_densa": {
+      "test": 46,
+      "train": 209,
+      "val": 45
+    }
+  },
+  "scene_counts_by_split": {
+    "train": 94,
+    "val": 11,
+    "test": 10
+  },
+  "scene_overlap_train_val": 0,
+  "scene_overlap_train_test": 0,
+  "scene_overlap_val_test": 0,
+  "metadata_md5": "be91fc65425e2181b1ddf6d91da878b6",
+  "note": "Mismas imagenes y mismo orden que v5b; solo cambia split para evaluar generalizacion por escena/fecha."
+}

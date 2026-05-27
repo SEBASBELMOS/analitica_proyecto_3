@@ -1,0 +1,6 @@
+# Dependencias SOLO para desarrollo y tests.
+# NO se incluyen en el Docker de produccion (Sit. 4.5).
+# Instalar local: pip install -r requirements-dev.txt
+-r requirements.txt
+pytest==8.3.3
+httpx==0.27.2  # requerido por fastapi.testclient en versiones recientes

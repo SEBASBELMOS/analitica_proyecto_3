@@ -1,0 +1,5 @@
+variable,n_validos,porcentaje_nulos,media,desviacion,min,mediana,max
+temperature_2m_c,43848,0.0,19.963,2.216,12.914,19.492,27.731
+dewpoint_2m_c,43848,0.0,16.966,1.107,10.323,17.037,21.231
+relative_humidity_pct,43848,0.0,83.363,7.949,46.803,85.619,98.832
+wind_speed_10m,43848,0.0,0.835,0.358,0.006,0.814,2.502

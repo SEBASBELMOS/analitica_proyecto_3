@@ -1,0 +1,57 @@
+{
+  "proyecto": "GeoVision-CLIP Cali",
+  "componente": "Sentinel-5P panel tabular",
+  "fuente_huggingface": {
+    "repo_id": "analiticalastdance/geovision-cali",
+    "filename": "panel_tabular/sentinel5p.parquet",
+    "local_cache_path": "/home/luis_arcia/.cache/huggingface/hub/datasets--analiticalastdance--geovision-cali/snapshots/f97581e1dc0da3d9cad25244bb73c257fba268a6/panel_tabular/sentinel5p.parquet"
+  },
+  "periodo": {
+    "inicio": "2020-01-01 00:00:00",
+    "fin": "2024-12-31 00:00:00"
+  },
+  "bbox": {
+    "west": -76.6,
+    "south": 3.3,
+    "east": -76.4,
+    "north": 3.55
+  },
+  "n_filas": 1270896,
+  "n_columnas": 19,
+  "columnas": [
+    "date",
+    "year",
+    "month",
+    "day",
+    "s5p_tile_id",
+    "s5p_lat_center",
+    "s5p_lon_center",
+    "s5p_bbox",
+    "s5p_no2_column",
+    "s5p_so2_column",
+    "s5p_o3_column",
+    "s5p_qa_no2",
+    "s5p_qa_so2",
+    "s5p_qa_o3",
+    "s5p_available_no2",
+    "s5p_available_so2",
+    "s5p_available_o3",
+    "s5p_qa_available",
+    "s5p_source"
+  ],
+  "dias_unicos": 1826,
+  "tiles_unicos": 1,
+  "qa_disponible": true,
+  "archivos_salida": {
+    "parquet": {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/sentinel/processed/sentinel5p_panel_cali_2020_2024.parquet",
+      "size_mb": 5.362,
+      "md5": "1523ff7952ed9ad7e76e4fa7e9c8f091"
+    },
+    "csv": {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/sentinel/processed/sentinel5p_panel_cali_2020_2024.csv",
+      "size_mb": 217.4,
+      "md5": "7882d69fe7cb84d8f018633effcdda89"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+variable,n_validos,porcentaje_nulos,media,desviacion,min,mediana,max
+s5p_no2_column,1270896,0.0,1.1e-05,1.9e-05,-2.8e-05,0.0,0.0002
+s5p_so2_column,1270896,0.0,2.4e-05,0.000191,-0.000997,0.0,0.011142
+s5p_o3_column,1270896,0.0,0.110811,0.024815,0.0,0.115429,0.147299

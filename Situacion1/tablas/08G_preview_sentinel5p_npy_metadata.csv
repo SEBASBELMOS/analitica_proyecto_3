@@ -1,0 +1,12 @@
+metrica,valor
+producto,O3
+archivo,2022-07-14.npy
+ruta,/workspace/geovision-cali-hf/data/sentinel2-sentinel-5p/sentinel5p-raw/O3/2022-07-14.npy
+fecha_inferida,2022-07-14 00:00:00
+shape,"(29, 24)"
+dtype,float64
+ndim,2
+min,0.11786830425262451
+max,0.12160862982273102
+media,0.11979340584199319
+n_validos,696

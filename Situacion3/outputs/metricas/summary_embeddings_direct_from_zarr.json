@@ -1,0 +1,32 @@
+{
+  "n_tiles": 116542,
+  "output_zarr": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/17_embeddings_full_clean_direct_from_zarr/embeddings_direct_from_zarr.zarr",
+  "metadata": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/17_embeddings_full_clean_direct_from_zarr/metadata_embeddings_direct_from_zarr.csv",
+  "remoteclip_visual_512_shape": [
+    116542,
+    512
+  ],
+  "h_256_shape": [
+    116542,
+    256
+  ],
+  "r_256_shape": [
+    116542,
+    256
+  ],
+  "z_1024_shape": [
+    116542,
+    1024
+  ],
+  "checkpoint_md5": "2a512b70e4a837a0c652aa71f2c970b4",
+  "input_metadata_md5": {
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_000_of_008/metadata_tiles_scl.csv": "2882ad68f0226581932f43047a06d3f9",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_001_of_008/metadata_tiles_scl.csv": "8fca3deac95e75f913265bc7bc5bdbe5",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_002_of_008/metadata_tiles_scl.csv": "c7d42e535119204b8f1aa222d2a4b7e8",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_003_of_008/metadata_tiles_scl.csv": "7a54cc23aa96e70574a3996ec0dd4b7d",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_004_of_008/metadata_tiles_scl.csv": "7f6f6063cfec337990059f1b13d5f0dc",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_005_of_008/metadata_tiles_scl.csv": "2208fb7148dbc3f92a46b517f4009742",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_006_of_008/metadata_tiles_scl.csv": "cdb9896a1b5bfe1b3ca0672ed92ac315",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/16_metadata_tiles_from_zarr_cache/full/chunk_007_of_008/metadata_tiles_scl.csv": "21da4cc64e453f0d12535e4815db4db4"
+  }
+}

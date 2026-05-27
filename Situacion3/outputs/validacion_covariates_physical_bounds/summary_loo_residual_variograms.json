@@ -1,0 +1,10 @@
+{
+  "loo_predictions": "outputs/situacion3/rubrica/40_loo_spatial_st_kriging_cv_covariates_physical_bounds/loo_spatial_predictions_long.csv",
+  "variograms_csv": "outputs/situacion3/rubrica/40_loo_spatial_st_kriging_cv_covariates_physical_bounds/experimental_variograms_corrected_loo.csv",
+  "classification_csv": "outputs/situacion3/rubrica/40_loo_spatial_st_kriging_cv_covariates_physical_bounds/variogram_residual_structure_classification.csv",
+  "n_variogram_rows": 72,
+  "classification_counts": {
+    "estructura_residual_detectable": 5,
+    "sin_estructura_nugget_puro": 1
+  }
+}

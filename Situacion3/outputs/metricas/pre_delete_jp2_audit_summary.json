@@ -1,0 +1,163 @@
+{
+  "manifest": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/12_sentinel2_zarr_cache_cali_bbox/zarr_scene_cache_manifest.csv",
+  "n_rows": 198,
+  "n_cached": 198,
+  "n_errors": 0,
+  "date_min": "2020-01-02",
+  "date_max": "2024-12-16",
+  "mgrs_tiles": [
+    "MGRS-18NUJ",
+    "MGRS-18NUK"
+  ],
+  "tiny_lt_1mb": [
+    {
+      "scene_id": "S2B_MSIL2A_20210720T153619_N0500_R068_T18NUJ_20230125T024040",
+      "date": "2021-07-20",
+      "mgrs_tile": "MGRS-18NUJ",
+      "size_mb": 0.467,
+      "shape_image": [
+        12,
+        2761,
+        2227
+      ],
+      "shape_scl": [
+        2761,
+        2227
+      ],
+      "sample_finite": true,
+      "sample_min": 0.0,
+      "sample_max": 0.0
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20210720T153619_N0500_R068_T18NUK_20230125T024040",
+      "date": "2021-07-20",
+      "mgrs_tile": "MGRS-18NUK",
+      "size_mb": 0.41,
+      "shape_image": [
+        12,
+        227,
+        2227
+      ],
+      "shape_scl": [
+        227,
+        2227
+      ],
+      "sample_finite": true,
+      "sample_min": 0.0,
+      "sample_max": 0.0
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20220707T152651_N0510_R025_T18NUJ_20240626T073228",
+      "date": "2022-07-07",
+      "mgrs_tile": "MGRS-18NUJ",
+      "size_mb": 0.169,
+      "shape_image": [
+        12,
+        2761,
+        2227
+      ],
+      "shape_scl": [
+        2761,
+        2227
+      ],
+      "sample_finite": true,
+      "sample_min": 0.0,
+      "sample_max": 0.0
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20230518T152639_N0510_R025_T18NUJ_20240906T090343",
+      "date": "2023-05-18",
+      "mgrs_tile": "MGRS-18NUJ",
+      "size_mb": 0.092,
+      "shape_image": [
+        12,
+        2761,
+        2227
+      ],
+      "shape_scl": [
+        2761,
+        2227
+      ],
+      "sample_finite": true,
+      "sample_min": 0.0,
+      "sample_max": 0.0
+    }
+  ],
+  "sample_checks": [
+    {
+      "scene_id": "S2B_MSIL2A_20200107T153619_N0500_R068_T18NUJ_20230516T042122",
+      "image_shape": [
+        12,
+        2761,
+        2227
+      ],
+      "scl_shape": [
+        2761,
+        2227
+      ],
+      "has_crs": true,
+      "has_transform": true,
+      "has_bounds": true
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20200102T153611_N0500_R068_T18NUJ_20230426T115242",
+      "image_shape": [
+        12,
+        2761,
+        2227
+      ],
+      "scl_shape": [
+        2761,
+        2227
+      ],
+      "has_crs": true,
+      "has_transform": true,
+      "has_bounds": true
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20200112T153611_N0500_R068_T18NUJ_20230429T094928",
+      "image_shape": [
+        12,
+        2761,
+        2227
+      ],
+      "scl_shape": [
+        2761,
+        2227
+      ],
+      "has_crs": true,
+      "has_transform": true,
+      "has_bounds": true
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20200127T153609_N0500_R068_T18NUJ_20230428T045725",
+      "image_shape": [
+        12,
+        2761,
+        2227
+      ],
+      "scl_shape": [
+        2761,
+        2227
+      ],
+      "has_crs": true,
+      "has_transform": true,
+      "has_bounds": true
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20200107T153619_N0500_R068_T18NUK_20230516T042122",
+      "image_shape": [
+        12,
+        227,
+        2227
+      ],
+      "scl_shape": [
+        227,
+        2227
+      ],
+      "has_crs": true,
+      "has_transform": true,
+      "has_bounds": true
+    }
+  ]
+}

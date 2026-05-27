@@ -1,0 +1,13 @@
+﻿variable,n_nulos,pct_nulos,dtype
+fecha_hora,0,0.0,datetime64[ns]
+temperature_2m_c,0,0.0,float32
+dewpoint_2m_c,0,0.0,float32
+relative_humidity_pct,0,0.0,float32
+u10_m_s,0,0.0,float32
+v10_m_s,0,0.0,float32
+wind_speed_10m,0,0.0,float32
+wind_direction_10m_deg,0,0.0,float32
+surface_pressure_hpa,0,0.0,float32
+total_precipitation_mm_raw,0,0.0,float32
+total_precipitation_mm_hourly,1,0.0022806057288815907,float32
+surface_solar_radiation_downwards_j_m2,0,0.0,float32

@@ -1,0 +1,34 @@
+{
+  "residuals": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/27_convlstm_covariates_predictions_residuals/convlstm_predictions_residuals_long.csv",
+  "predictions_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/28_loo_spatial_st_kriging_cv_covariates/loo_spatial_predictions_long.csv",
+  "fold_metrics_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/28_loo_spatial_st_kriging_cv_covariates/loo_spatial_fold_metrics.csv",
+  "metrics_summary_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/28_loo_spatial_st_kriging_cv_covariates/loo_spatial_metrics_summary.csv",
+  "pollutants": [
+    "SO2",
+    "O3"
+  ],
+  "horizons_days": [
+    1,
+    3,
+    7
+  ],
+  "n_predictions": 2651,
+  "n_folds": 33,
+  "statuses": {
+    "ok": 33
+  },
+  "overall_base": {
+    "rmse": 6.453517862478623,
+    "mae": 4.4714684804170055,
+    "r2": 0.8025079117946723,
+    "n": 2651
+  },
+  "overall_corrected": {
+    "rmse": 6.388579830092633,
+    "mae": 4.449613052088678,
+    "r2": 0.8064624134690398,
+    "n": 2651
+  },
+  "overall_coverage_95_sigma_kriging": 0.938513768389287,
+  "note_no2": "NO2 is excluded from spatial LOO-CV because current DAGMA/SISAIRE inputs have one NO2 station only."
+}

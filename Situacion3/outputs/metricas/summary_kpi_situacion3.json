@@ -1,0 +1,11 @@
+{
+  "kpi_csv": "/workspace/geovision-cali-hf/Entrega_Final/Situacion3/outputs/metricas/kpi_situacion3_summary.csv",
+  "variogram_classification_csv": "/workspace/geovision-cali-hf/Entrega_Final/Situacion3/outputs/validacion_covariates_physical_bounds/variogram_residual_structure_classification.csv",
+  "legacy_base_kpi_csv": "/workspace/geovision-cali-hf/Entrega_Final/Situacion3/outputs/metricas/kpi_situacion3_base_summary_legacy.csv",
+  "status_counts": {
+    "cumple_minimo": 3,
+    "excelente": 4,
+    "no_cumple": 1,
+    "no_evaluable": 1
+  }
+}

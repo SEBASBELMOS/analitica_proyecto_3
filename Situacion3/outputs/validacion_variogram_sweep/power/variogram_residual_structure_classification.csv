@@ -1,0 +1,7 @@
+pollutant,horizon_days,distance_semivariance_corr,relative_semivariance_change,classification
+O3,1,0.16970836688825802,-0.24156673882489027,sin_estructura_nugget_puro
+O3,3,0.7239832096987907,0.06637429188423513,estructura_residual_detectable
+O3,7,0.8486553964179306,0.1928862691159814,estructura_residual_detectable
+SO2,1,0.780102521782053,1.2590663345788824,estructura_residual_detectable
+SO2,3,0.8629949295828139,0.592835360026239,estructura_residual_detectable
+SO2,7,0.7510268505228765,0.9268699401585208,estructura_residual_detectable

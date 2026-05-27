@@ -1,0 +1,18 @@
+{
+  "maps": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/37_st_kriging_corrected_maps_physical_bounds/st_kriging_corrected_maps_long.csv",
+  "n_grid_cells": 1920,
+  "k_neighbors": 8,
+  "permutations": 999,
+  "alpha": 0.05,
+  "k_clusters": 5,
+  "moran_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/38_moran_lisa_kmeans_physical_bounds/moran_global_by_pollutant_horizon.csv",
+  "lisa_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/38_moran_lisa_kmeans_physical_bounds/lisa_local_clusters_long.csv",
+  "kmeans_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/38_moran_lisa_kmeans_physical_bounds/kmeans_critical_profiles_by_grid.csv",
+  "cluster_summary_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/38_moran_lisa_kmeans_physical_bounds/kmeans_cluster_summary.csv",
+  "geojson_outputs": [
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/38_moran_lisa_kmeans_physical_bounds/kmeans_critical_profiles.geojson",
+    "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/38_moran_lisa_kmeans_physical_bounds/lisa_local_clusters.geojson"
+  ],
+  "moran_significant_count": 9,
+  "lisa_significant_count": 10254
+}

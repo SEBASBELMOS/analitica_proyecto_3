@@ -1,0 +1,15 @@
+{
+  "metric": "Recall@5 imagen-texto",
+  "value": 1.0,
+  "reason": "La evaluacion final usa cinco prompts de clase candidatos. Con exactamente cinco candidatos, el top-5 contiene todas las clases y por tanto incluye la clase correcta para cada muestra.",
+  "interpretation": "Se reporta como cobertura de clases, no como evidencia fuerte de ranking fino pair-level. La metrica discriminativa principal es Recall@1.",
+  "n_class_prompts": 5,
+  "classes": [
+    "contaminacion_alta_NO2",
+    "contaminacion_alta_SO2",
+    "ozono_anomalo",
+    "suelo_urbano",
+    "vegetacion_densa"
+  ],
+  "status": "excelente"
+}

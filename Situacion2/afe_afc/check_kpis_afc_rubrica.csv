@@ -1,0 +1,4 @@
+criterio,valor,cumple
+Varianza acumulada >= 80%,0.8013125658035278,True
+RMSEA < 0.08,0.031243210701081218,True
+CFI > 0.90,0.9464609790593709,True

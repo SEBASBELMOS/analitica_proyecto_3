@@ -1,0 +1,14 @@
+{
+  "source_loo_predictions": "outputs/situacion3/rubrica/28_loo_spatial_st_kriging_cv_covariates/loo_spatial_predictions_long.csv",
+  "predictions_csv": "outputs/situacion3/rubrica/42_loo_variogram_linear_physical_bounds/loo_spatial_predictions_long.csv",
+  "metrics_csv": "outputs/situacion3/rubrica/42_loo_variogram_linear_physical_bounds/loo_spatial_metrics_summary.csv",
+  "n_predictions": 2651,
+  "n_negative_corrected_input": 70,
+  "n_negative_variance_input": 0,
+  "n_convlstm_fallback": 70,
+  "n_zero_floor_after_fallback": 50,
+  "n_negative_corrected_output": 0,
+  "n_negative_variance_output": 0,
+  "n_zero_corrected_output": 50,
+  "overall_coverage_95_sigma_kriging": 0.938513768389287
+}

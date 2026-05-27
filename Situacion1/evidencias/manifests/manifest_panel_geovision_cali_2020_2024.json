@@ -1,0 +1,305 @@
+{
+  "project": "GeoVision-CLIP Cali",
+  "component": "Final analytical station-hourly panel",
+  "generated_at_utc": "2026-05-21T00:05:53.290911+00:00",
+  "granularity": "DAGMA station x hour",
+  "period": {
+    "start": "2020-01-01 00:00:00",
+    "end": "2024-12-31 23:00:00"
+  },
+  "spatial_join_policy": {
+    "s5p": "nearest Sentinel-5P tile per station, joined by exact daily date",
+    "s2": "nearest Sentinel-2 grid per station, joined to nearest acquisition date within +/-30 days"
+  },
+  "raw_dataset_note": "The >=50GB requirement applies to raw satellite images/datasets. This output is a compressed derived analytical panel.",
+  "leakage_note": "The complete panel keeps Sentinel-5P concentration columns for traceability. The model_safe panel excludes direct s5p_no2_column, s5p_so2_column and s5p_o3_column to reduce data leakage risk.",
+  "input_files": {
+    "gold_dagma_era5_modis": {
+      "path": "D:\\Universidad\\analitica\\Proyecto_3\\data\\gold\\panel_station_hourly_dagma_era5_modis_2020_2024.parquet",
+      "size_bytes": 9630494,
+      "size_mb": 9.184,
+      "md5": "ca6e1aec0d8b5bb2e59fd1fa129c9550"
+    },
+    "sentinel5p_panel": {
+      "path": "D:\\Universidad\\analitica\\Proyecto_3\\data\\sentinel\\processed\\sentinel5p_panel_cali_2020_2024.parquet",
+      "size_bytes": 5622207,
+      "size_mb": 5.362,
+      "md5": "1523ff7952ed9ad7e76e4fa7e9c8f091"
+    },
+    "sentinel2_panel": {
+      "path": "D:\\Universidad\\analitica\\Proyecto_3\\data\\sentinel\\processed\\sentinel2_panel_cali_2020_2024.parquet",
+      "size_bytes": 42860527,
+      "size_mb": 40.875,
+      "md5": "df7f9589274a48226a0a08b406e513f7"
+    }
+  },
+  "output_files": {
+    "panel_complete": {
+      "path": "D:\\Universidad\\analitica\\Proyecto_3\\data\\final\\panel_geovision_cali_station_hourly_2020_2024.parquet",
+      "size_bytes": 10185510,
+      "size_mb": 9.714,
+      "md5": "96cff00ad3f71ebf2bee66b57642a4c6"
+    },
+    "panel_model_safe": {
+      "path": "D:\\Universidad\\analitica\\Proyecto_3\\data\\final\\panel_geovision_cali_station_hourly_2020_2024_model_safe.parquet",
+      "size_bytes": 10046213,
+      "size_mb": 9.581,
+      "md5": "617962658552dec5c9e3bce6ef69bd1b"
+    },
+    "quality_summary": {
+      "path": "D:\\Universidad\\analitica\\Proyecto_3\\data\\final\\quality_panel_geovision_cali_2020_2024.csv",
+      "size_bytes": 4471,
+      "size_mb": 0.004,
+      "md5": "0ae44f69b1db293dae8839a39d88c3be"
+    }
+  },
+  "coverage": {
+    "rows": 278618,
+    "columns": 105,
+    "stations": 9,
+    "start_fecha_hora": "2020-01-01 00:00:00",
+    "end_fecha_hora": "2024-12-31 23:00:00",
+    "s5p_rows_with_no2": 278452,
+    "s5p_rows_with_so2": 278452,
+    "s5p_rows_with_o3": 278452,
+    "s2_rows_matched": 269609,
+    "s2_max_temporal_distance_days": 30.0
+  },
+  "station_to_s5p_tile": [
+    {
+      "estacion": "Base Aerea",
+      "s5p_cell_key": "3.459483_-76.504166",
+      "s5p_tile_distance_km": 0.3334588049039736,
+      "s5p_tile_lat_center": 3.4594826698303223,
+      "s5p_tile_lon_center": -76.50416564941406
+    },
+    {
+      "estacion": "Canaveralejo",
+      "s5p_cell_key": "3.416379_-76.54583",
+      "s5p_tile_distance_km": 0.42017447695649995,
+      "s5p_tile_lat_center": 3.41637921333313,
+      "s5p_tile_lon_center": -76.54582977294922
+    },
+    {
+      "estacion": "Compartir",
+      "s5p_cell_key": "3.425_-76.4625",
+      "s5p_tile_distance_km": 0.5804970179288986,
+      "s5p_tile_lat_center": 3.424999952316284,
+      "s5p_tile_lon_center": -76.4625015258789
+    },
+    {
+      "estacion": "ERA - Obrero",
+      "s5p_cell_key": "3.459483_-76.504166",
+      "s5p_tile_distance_km": 0.3570917277685982,
+      "s5p_tile_lat_center": 3.4594826698303223,
+      "s5p_tile_lon_center": -76.50416564941406
+    },
+    {
+      "estacion": "Ermita",
+      "s5p_cell_key": "3.459483_-76.52917",
+      "s5p_tile_distance_km": 0.48484189582868503,
+      "s5p_tile_lat_center": 3.4594826698303223,
+      "s5p_tile_lon_center": -76.52916717529297
+    },
+    {
+      "estacion": "Flora",
+      "s5p_cell_key": "3.485345_-76.52083",
+      "s5p_tile_distance_km": 0.44399516678527073,
+      "s5p_tile_lat_center": 3.485344886779785,
+      "s5p_tile_lon_center": -76.52083587646484
+    },
+    {
+      "estacion": "Pance",
+      "s5p_cell_key": "3.30431_-76.52917",
+      "s5p_tile_distance_km": 0.2324028007981641,
+      "s5p_tile_lat_center": 3.3043103218078613,
+      "s5p_tile_lon_center": -76.52916717529297
+    },
+    {
+      "estacion": "Transitoria - Navarro",
+      "s5p_cell_key": "3.416379_-76.495834",
+      "s5p_tile_distance_km": 0.13163861507701738,
+      "s5p_tile_lat_center": 3.41637921333313,
+      "s5p_tile_lon_center": -76.49583435058594
+    },
+    {
+      "estacion": "Univalle",
+      "s5p_cell_key": "3.381896_-76.5375",
+      "s5p_tile_distance_km": 0.6029864582744772,
+      "s5p_tile_lat_center": 3.381896495819092,
+      "s5p_tile_lon_center": -76.5374984741211
+    }
+  ],
+  "station_to_s2_grid": [
+    {
+      "estacion": "Base Aerea",
+      "s2_grid_id": "g_031_019",
+      "s2_grid_distance_km": 0.046788080064737884,
+      "s2_grid_lat_center": 3.4574999999999996,
+      "s2_grid_lon_center": -76.5025
+    },
+    {
+      "estacion": "Canaveralejo",
+      "s2_grid_id": "g_023_010",
+      "s2_grid_distance_km": 0.2662849124918436,
+      "s2_grid_lat_center": 3.4175,
+      "s2_grid_lon_center": -76.5475
+    },
+    {
+      "estacion": "Compartir",
+      "s2_grid_id": "g_025_026",
+      "s2_grid_distance_km": 0.13220774210846015,
+      "s2_grid_lat_center": 3.4274999999999998,
+      "s2_grid_lon_center": -76.4675
+    },
+    {
+      "estacion": "ERA - Obrero",
+      "s2_grid_id": "g_031_018",
+      "s2_grid_distance_km": 0.10858748319991729,
+      "s2_grid_lat_center": 3.4574999999999996,
+      "s2_grid_lon_center": -76.5075
+    },
+    {
+      "estacion": "Ermita",
+      "s2_grid_id": "g_031_013",
+      "s2_grid_distance_km": 0.2780375635866841,
+      "s2_grid_lat_center": 3.4574999999999996,
+      "s2_grid_lon_center": -76.5325
+    },
+    {
+      "estacion": "Flora",
+      "s2_grid_id": "g_037_016",
+      "s2_grid_distance_km": 0.1010428241408817,
+      "s2_grid_lat_center": 3.4875,
+      "s2_grid_lon_center": -76.5175
+    },
+    {
+      "estacion": "Pance",
+      "s2_grid_id": "g_000_013",
+      "s2_grid_distance_km": 0.263619253466636,
+      "s2_grid_lat_center": 3.3024999999999998,
+      "s2_grid_lon_center": -76.5325
+    },
+    {
+      "estacion": "Transitoria - Navarro",
+      "s2_grid_id": "g_023_021",
+      "s2_grid_distance_km": 0.27531887669272426,
+      "s2_grid_lat_center": 3.4175,
+      "s2_grid_lon_center": -76.49249999999999
+    },
+    {
+      "estacion": "Univalle",
+      "s2_grid_id": "g_015_013",
+      "s2_grid_distance_km": 0.15253073680919516,
+      "s2_grid_lat_center": 3.3775,
+      "s2_grid_lon_center": -76.5325
+    }
+  ],
+  "columns": [
+    "fecha_hora",
+    "date",
+    "hour",
+    "municipio",
+    "estacion",
+    "lat",
+    "lon",
+    "no2_insitu",
+    "so2_insitu",
+    "o3_insitu",
+    "year_x",
+    "month_x",
+    "day_x",
+    "temperature_2m_c",
+    "dewpoint_2m_c",
+    "relative_humidity_pct",
+    "u10_m_s",
+    "v10_m_s",
+    "wind_speed_10m",
+    "wind_direction_10m_deg",
+    "surface_pressure_hpa",
+    "total_precipitation_mm_raw",
+    "total_precipitation_mm_hourly",
+    "surface_solar_radiation_downwards_j_m2",
+    "aod_047_mean",
+    "aod_055_mean",
+    "n_observations",
+    "aod_disponible",
+    "year_modis",
+    "month_modis",
+    "dayofyear",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos",
+    "aod_047_observado",
+    "aod_055_observado",
+    "aod_047_interp",
+    "aod_055_interp",
+    "aod_origen",
+    "s5p_cell_key",
+    "s5p_tile_distance_km",
+    "s5p_tile_id",
+    "s5p_lat_center",
+    "s5p_lon_center",
+    "s5p_bbox",
+    "s5p_no2_column",
+    "s5p_so2_column",
+    "s5p_o3_column",
+    "s5p_qa_no2",
+    "s5p_qa_so2",
+    "s5p_qa_o3",
+    "s5p_available_no2",
+    "s5p_available_so2",
+    "s5p_available_o3",
+    "s5p_qa_available",
+    "s5p_source",
+    "s2_grid_id",
+    "s2_grid_distance_km",
+    "s2_date",
+    "year_y",
+    "month_y",
+    "day_y",
+    "s2_lat_center",
+    "s2_lon_center",
+    "s2_bbox",
+    "s2_source",
+    "s2_cloud_pct",
+    "s2_valid_pixel_pct",
+    "s2_b1_mean",
+    "s2_b1_std",
+    "s2_b2_mean",
+    "s2_b2_std",
+    "s2_b3_mean",
+    "s2_b3_std",
+    "s2_b4_mean",
+    "s2_b4_std",
+    "s2_b5_mean",
+    "s2_b5_std",
+    "s2_b6_mean",
+    "s2_b6_std",
+    "s2_b7_mean",
+    "s2_b7_std",
+    "s2_b8_mean",
+    "s2_b8_std",
+    "s2_b8a_mean",
+    "s2_b8a_std",
+    "s2_b9_mean",
+    "s2_b9_std",
+    "s2_b11_mean",
+    "s2_b11_std",
+    "s2_b12_mean",
+    "s2_b12_std",
+    "s2_ndvi",
+    "s2_bsi",
+    "s2_ndbi",
+    "s2_urban_index",
+    "s2_vegetation_fraction",
+    "s2_ndvi_std",
+    "s2_bsi_std",
+    "s2_ndbi_std",
+    "s2_observed",
+    "s2_days_from_observation",
+    "s2_cell_key",
+    "s2_temporal_distance_days"
+  ]
+}

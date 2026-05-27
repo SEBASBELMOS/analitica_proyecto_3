@@ -1,0 +1,4 @@
+variable,n_validos,porcentaje_nulos,media,min,mediana,max
+s2_n_grids_available_day,129,0.0,1754.6667,2.0,1982.0,2000.0
+s2_cloud_pct_mean,129,0.0,40.1052,4.3875,44.11,59.78
+s2_valid_pixel_pct_mean,129,0.0,92.9762,12.2685,94.8996,99.9995

@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS se importa en main.tsx para garantizar orden correcto con Vite */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  background: #f7f7f8;
+}
+
+/* Container del mapa Leaflet: garantizar altura calculada en pixels. */
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  background: #f0f0f0;
+  position: relative;
+}
+
+/* CRITICO: Tailwind Preflight aplica `img { max-width: 100%; height: auto }`
+   lo cual ROMPE los tiles de Leaflet (cada tile es 256x256 fijo, no debe escalarse).
+   Resultado del bug: tiles aparecen desordenados o solo se cargan algunos.
+   Fix: override completo de las imagenes dentro del mapa. */
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+  height: auto;
+  width: auto;
+}
+
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-pane > svg,
+.leaflet-pane > canvas,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.leaflet-container .leaflet-overlay-pane svg {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-container .leaflet-marker-pane img,
+.leaflet-container .leaflet-shadow-pane img,
+.leaflet-container .leaflet-tile-pane img,
+.leaflet-container img.leaflet-image-layer,
+.leaflet-container .leaflet-tile {
+  max-width: none !important;
+  max-height: none !important;
+  width: auto;
+  padding: 0;
+}
+
+/* Customizacion popup Leaflet */
+.leaflet-popup-content-wrapper {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Marcador DAGMA personalizado (circulo + sombra) */
+.dagma-marker {
+  background: #d7191c;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Spinner de loading */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.spinner {
+  animation: spin 1s linear infinite;
+}

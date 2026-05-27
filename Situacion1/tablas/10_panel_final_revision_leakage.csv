@@ -1,0 +1,4 @@
+criterio,resultado
+columnas_sentinel5p_directas_en_panel,Ninguna
+n_columnas_riesgo_leakage,0
+estado_model_safe,OK - no se detectan columnas satelitales directas de contaminantes

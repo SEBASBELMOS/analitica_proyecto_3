@@ -1,0 +1,4 @@
+contaminante,registros_totales,registros_validos,porcentaje_nulos,n_estaciones,fecha_min,fecha_max
+O3,340070,191257,43.76,10,2020-01-01,2024-12-31
+SO2,284736,132415,53.496,10,2020-01-01,2024-12-31
+NO2,178340,26259,85.276,9,2020-01-01,2024-12-31

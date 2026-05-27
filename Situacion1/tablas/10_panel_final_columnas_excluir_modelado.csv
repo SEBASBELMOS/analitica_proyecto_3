@@ -1,0 +1,13 @@
+variable,motivo
+s2_days_from_observation,100% nulos
+s2_observed,100% nulos
+s2_source,constante o único valor
+s5p_available_no2,constante o único valor
+s5p_available_o3,constante o único valor
+s5p_available_so2,constante o único valor
+s5p_qa_available,constante o único valor
+s5p_qa_no2,constante o único valor
+s5p_qa_o3,constante o único valor
+s5p_qa_so2,constante o único valor
+s5p_source,constante o único valor
+s5p_tile_id,constante o único valor

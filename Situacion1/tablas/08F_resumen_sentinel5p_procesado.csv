@@ -1,0 +1,10 @@
+metrica,valor
+n_archivos_sentinel5p_procesados,5552
+productos_detectados,"NO2, O3, SO2"
+formatos_detectados,.npy
+tamano_total_mb,15.3656
+fecha_min_inferida,2020-01-01 00:00:00
+fecha_max_inferida,2024-12-31 00:00:00
+archivos_con_fecha_inferida,5480
+archivos_sin_fecha_inferida,72
+carpetas_unicas,3

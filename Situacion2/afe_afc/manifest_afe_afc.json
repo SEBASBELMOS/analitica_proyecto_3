@@ -1,0 +1,30 @@
+{
+  "script": "/workspace/geovision-cali-hf/manuel/eda/notebooks/PCA/run_pca_afe_afc_remoteclip_v10_v5b.py",
+  "input_npz": "/workspace/geovision-cali-hf/outputs/clip_training_remoteclip_v10_v5b_embeddings/embeddings_remoteclip_v10_v5b.npz",
+  "metadata": "/workspace/geovision-cali-hf/outputs/clip_dataset_final_step_by_step/clip_s2_12band_pdf_classes_v5b_high_purity_1500_gsplit/metadata.jsonl",
+  "input_oficial": "remoteclip_visual_512",
+  "input_shape_original": [
+    1500,
+    512
+  ],
+  "input_shape_filtrado": [
+    1500,
+    512
+  ],
+  "filas_embedding_cero_excluidas": 0,
+  "componentes_80_completo": 39,
+  "componentes_80_filtrado_principal": 39,
+  "varianza_80_filtrado_principal": 0.8013125658035278,
+  "max_modelos_afc": 10000,
+  "modelos_afc_ajustados": 10000,
+  "modelo_afc_final": "Carga_Antropogenica =~ Factor_1_score + Factor_29_score\nEstres_Vegetal =~ Factor_6_score + Factor_27_score\nDensidad_Urbana =~ Factor_2_score + Factor_5_score\nVolatilidad_Atmosferica =~ Factor_16_score + Factor_9_score",
+  "metricas_afc_final": {
+    "CFI": 0.9464609790593709,
+    "RMSEA": 0.031243210701081218,
+    "SRMR": 0.1457552655496196,
+    "chi2": 34.485236578146505,
+    "DoF": 14.0
+  },
+  "cumple_pdf": true,
+  "nota": "Metadata y Sentinel-5P se usan para trazabilidad/interpretación, no como variables PCA."
+}

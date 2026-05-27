@@ -1,0 +1,106 @@
+{
+  "proyecto": "GeoVision-CLIP Cali",
+  "componente": "Sentinel-2 panel tabular/features",
+  "fuente_huggingface": {
+    "repo_id": "analiticalastdance/geovision-cali-s2",
+    "parquet": "features/sentinel2_features_cali_2020_2024.parquet",
+    "manifest_hf": "features/manifest_sentinel2.json",
+    "retry_log_hf": "features/sentinel2_retry_failed_results.json",
+    "local_parquet_cache": "/home/luis_arcia/.cache/huggingface/hub/datasets--analiticalastdance--geovision-cali-s2/snapshots/afd76766e0219fac0c85cd7c544d8285817d93f1/features/sentinel2_features_cali_2020_2024.parquet"
+  },
+  "periodo": {
+    "inicio": "2020-01-02 00:00:00",
+    "fin": "2024-12-16 00:00:00"
+  },
+  "bbox": {
+    "west": -76.6,
+    "south": 3.3,
+    "east": -76.4,
+    "north": 3.55
+  },
+  "n_filas": 226352,
+  "n_columnas": 45,
+  "columnas": [
+    "date",
+    "year",
+    "month",
+    "day",
+    "s2_grid_id",
+    "s2_lat_center",
+    "s2_lon_center",
+    "s2_bbox",
+    "s2_source",
+    "s2_cloud_pct",
+    "s2_valid_pixel_pct",
+    "s2_b1_mean",
+    "s2_b1_std",
+    "s2_b2_mean",
+    "s2_b2_std",
+    "s2_b3_mean",
+    "s2_b3_std",
+    "s2_b4_mean",
+    "s2_b4_std",
+    "s2_b5_mean",
+    "s2_b5_std",
+    "s2_b6_mean",
+    "s2_b6_std",
+    "s2_b7_mean",
+    "s2_b7_std",
+    "s2_b8_mean",
+    "s2_b8_std",
+    "s2_b8a_mean",
+    "s2_b8a_std",
+    "s2_b9_mean",
+    "s2_b9_std",
+    "s2_b11_mean",
+    "s2_b11_std",
+    "s2_b12_mean",
+    "s2_b12_std",
+    "s2_ndvi",
+    "s2_bsi",
+    "s2_ndbi",
+    "s2_urban_index",
+    "s2_vegetation_fraction",
+    "s2_ndvi_std",
+    "s2_bsi_std",
+    "s2_ndbi_std",
+    "s2_observed",
+    "s2_days_from_observation"
+  ],
+  "dias_unicos": 129,
+  "grids_unicos": 2000,
+  "sentinel2_bands_available": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b8a",
+    "b9",
+    "b11",
+    "b12"
+  ],
+  "sentinel2_bands_absent": [
+    "b10"
+  ],
+  "limitaciones": [
+    "El parquet no trae s2_observed explícito.",
+    "El parquet no trae s2_days_from_observation explícito.",
+    "Solo se usó el parquet de features; manifest y retry log no fueron concatenados con los datos."
+  ],
+  "archivos_salida": {
+    "parquet": {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/sentinel/processed/sentinel2_panel_cali_2020_2024.parquet",
+      "size_mb": 40.875,
+      "md5": "df7f9589274a48226a0a08b406e513f7"
+    },
+    "csv": {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/sentinel/processed/sentinel2_panel_cali_2020_2024.csv",
+      "size_mb": 109.321,
+      "md5": "5853966ce9dff7798778b2777a370053"
+    }
+  }
+}

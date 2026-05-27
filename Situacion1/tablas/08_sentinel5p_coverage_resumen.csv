@@ -1,0 +1,9 @@
+metrica,valor
+formato_detectado,csv
+filas_totales,1826
+columnas_totales,10
+variables_numericas,8
+columna_temporal_detectada,date
+fecha_min,2020-01-01 00:00:00
+fecha_max,2024-12-31 00:00:00
+anios_disponibles,"2020, 2021, 2022, 2023, 2024"

@@ -1,0 +1,12 @@
+metrica,valor
+filas_totales,43848
+columnas_totales,14
+variables_numericas,11
+fecha_min,2020-01-01 00:00:00
+fecha_max,2024-12-31 23:00:00
+anios_disponibles,"2020, 2021, 2022, 2023, 2024"
+lat_min,
+lat_max,
+lon_min,
+lon_max,
+tipo_cobertura,Serie horaria agregada/recortada para el área de estudio; sin columnas explícitas de latitud y longitud en este archivo

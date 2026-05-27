@@ -1,0 +1,16 @@
+{
+  "tensor_zarr": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/18_spatial_embedding_tensors_full_clean/spatial_embedding_tensors_len8_h_256_targets_t1_t3_t7.zarr",
+  "prediction_zarr": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/20_convlstm_spatial_predictions_residuals/convlstm_predictions_all_samples.zarr",
+  "residuals": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/20_convlstm_spatial_predictions_residuals/convlstm_predictions_residuals_long.csv",
+  "maps_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/21_st_kriging_residual_corrected_maps/st_kriging_corrected_maps_long.csv",
+  "models_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/21_st_kriging_residual_corrected_maps/st_kriging_model_summary.csv",
+  "variograms_csv": "/workspace/geovision-cali-hf/outputs/situacion3/rubrica/21_st_kriging_residual_corrected_maps/experimental_variograms.csv",
+  "sample_index": 118,
+  "end_date": "2024-12-16",
+  "n_map_rows": 17280,
+  "n_maps": 9,
+  "statuses": {
+    "ok": 9
+  },
+  "note_no2": "NO2 kriging is computed if numerically possible, but spatial validation is not defensible because only one NO2 station exists."
+}

@@ -1,0 +1,14 @@
+metrica,valor
+filas_totales,1827
+columnas_totales,19
+variables_numericas,15
+fecha_min,2020-01-01 00:00:00
+fecha_max,2024-12-31 00:00:00
+anios_disponibles,"2020, 2021, 2022, 2023, 2024"
+columna_aod_detectada,aod_047_mean
+lat_min,
+lat_max,
+lon_min,
+lon_max,
+puntos_espaciales_unicos,
+tipo_cobertura,Archivo sin columnas explícitas de latitud/longitud; posiblemente agregado o preprocesado para el área de estudio

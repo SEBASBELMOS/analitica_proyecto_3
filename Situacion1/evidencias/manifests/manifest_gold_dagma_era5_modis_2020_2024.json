@@ -1,0 +1,76 @@
+{
+  "proyecto": "GeoVision-CLIP Cali",
+  "componente": "Panel GOLD estaciones DAGMA/SISAIRE + ERA5-Land + MODIS MAIAC",
+  "periodo": {
+    "inicio": "2020-01-01 00:00:00",
+    "fin": "2024-12-31 23:00:00"
+  },
+  "descripcion": "Panel horario por estación que integra mediciones in-situ DAGMA/SISAIRE de NO2, SO2 y O3, covariables meteorológicas ERA5-Land horarias, y AOD MODIS MAIAC diario.",
+  "n_filas": 278618,
+  "n_columnas": 40,
+  "columnas": [
+    "fecha_hora",
+    "date",
+    "year",
+    "month",
+    "day",
+    "hour",
+    "municipio",
+    "estacion",
+    "no2_insitu",
+    "so2_insitu",
+    "o3_insitu",
+    "lat",
+    "lon",
+    "temperature_2m_c",
+    "dewpoint_2m_c",
+    "relative_humidity_pct",
+    "u10_m_s",
+    "v10_m_s",
+    "wind_speed_10m",
+    "wind_direction_10m_deg",
+    "surface_pressure_hpa",
+    "total_precipitation_mm_raw",
+    "total_precipitation_mm_hourly",
+    "surface_solar_radiation_downwards_j_m2",
+    "aod_047_mean",
+    "aod_055_mean",
+    "n_observations",
+    "aod_disponible",
+    "year_modis",
+    "month_modis",
+    "dayofyear",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos",
+    "aod_047_observado",
+    "aod_055_observado",
+    "aod_047_interp",
+    "aod_055_interp",
+    "aod_origen"
+  ],
+  "fuentes_entrada": {
+    "dagma_sisaire": "/mnt/d/Universidad/analitica/Proyecto_3/data/DAGMA/processed/panel_dagma_sisaire_ancho_2020_2024.parquet",
+    "era5_land": "/mnt/d/Universidad/analitica/Proyecto_3/data/era5_modis/era5_land_cali_hourly_2020_2024.parquet",
+    "modis_maiac": "/mnt/d/Universidad/analitica/Proyecto_3/data/era5_modis/modis_maiac_aod_cali_daily_full_2020_2024.parquet"
+  },
+  "archivos_salida": [
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/gold/panel_station_hourly_dagma_era5_modis_2020_2024.parquet",
+      "fuente": "GOLD",
+      "descripcion": "Panel integrado horario por estación en Parquet",
+      "size_bytes": 9630494,
+      "size_mb": 9.184,
+      "md5": "ca6e1aec0d8b5bb2e59fd1fa129c9550"
+    },
+    {
+      "ruta": "/mnt/d/Universidad/analitica/Proyecto_3/data/gold/panel_station_hourly_dagma_era5_modis_2020_2024.csv",
+      "fuente": "GOLD",
+      "descripcion": "Panel integrado horario por estación en CSV",
+      "size_bytes": 112443642,
+      "size_mb": 107.235,
+      "md5": "92230d321de5fac0775bbbfdfc43028d"
+    }
+  ]
+}

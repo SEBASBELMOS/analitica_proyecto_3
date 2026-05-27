@@ -1,0 +1,53 @@
+version: "3.9"
+
+# ============================================================
+# docker-compose para GeoVision-CLIP Cali
+# Cumple requisito PDF: "Contenedor portátil, backend + frontend" (Sit. 4.5)
+# ============================================================
+
+services:
+
+  # Backend FastAPI (puerto 7860)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: geovision-cali-api:latest
+    container_name: geovision-cali-api
+    ports:
+      - "7860:7860"
+    environment:
+      - MODEL_PATH=/app/models/geovision_clip.pt
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Montar carpeta local de checkpoints (cuando Manuel termine)
+      - ../checkpoints:/app/models:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:7860/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - geovision-net
+
+  # Placeholder para frontend (Luis lo agregará)
+  # frontend:
+  #   build:
+  #     context: ../frontend
+  #     dockerfile: Dockerfile
+  #   image: geovision-cali-frontend:latest
+  #   container_name: geovision-cali-frontend
+  #   ports:
+  #     - "5173:5173"
+  #   environment:
+  #     - VITE_API_URL=http://backend:7860
+  #   depends_on:
+  #     backend:
+  #       condition: service_healthy
+  #   networks:
+  #     - geovision-net
+
+networks:
+  geovision-net:
+    driver: bridge
