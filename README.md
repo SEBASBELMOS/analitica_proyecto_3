@@ -99,32 +99,7 @@ print(f"Archivos: {mf['summary']['total_files']}, GB: {mf['summary']['total_size
 
 ---
 
-## 5. Tareas y Estado
-
-| Sit. | Tarea | Responsable | Estado |
-|------|-------|-------------|--------|
-| 1.1-1.2 | Credenciales GEE + S5P | Sebastian | LISTO |
-| 1.3 | S2 (12 bandas, MGRS) | Manuel | LISTO |
-| 1.4 | ERA5 + MODIS | Luis | EN CURSO |
-| 1.5 | DAGMA/SISAIRE | Luis | EN CURSO |
-| 1.6-1.7 | Zarr + manifest MD5 | Sebastian | LISTO |
-| 1.8 | EDA 8 viz del panel | Luis | PENDIENTE |
-| 2.1-2.2 | Dataset CLIP + Split | Sebastian | LISTO |
-| 2.3-2.6 | CLIP+SAE | Manuel | EN ESPERA |
-| 2.7-2.10 | Recall + checkpoint | Sebastian (post-Manuel) | BLOQUEADO |
-| 2.8-2.9 | AFE + AFC | Luis (post-Manuel) | BLOQUEADO |
-| 3.1-3.3 | ConvLSTM | Manuel | PENDIENTE |
-| 3.4-3.9 | Variograma + Kriging + Moran | Luis | PENDIENTE |
-| 4.1 | Backend FastAPI | Sebastian | LISTO (mock) |
-| 4.2-4.4 | Frontend React | Luis | PENDIENTE |
-| 4.5 | Docker multi-stage | Sebastian | LISTO |
-| 4.6 | Deploy HF Spaces | Sebastian | LISTO (URL: https://analiticalastdance-geovision-cali-api.hf.space) |
-| 4.7 | Reporte IEEE | Todos | PENDIENTE |
-| 4.8 | Reproducibilidad | Sebastian | LISTO |
-
----
-
-## 6. Stack Tecnologico
+## 5. Stack Tecnologico
 
 | Componente | Tecnologia | Estado |
 |------------|-----------|--------|
@@ -147,7 +122,7 @@ print(f"Archivos: {mf['summary']['total_files']}, GB: {mf['summary']['total_size
 
 ---
 
-## 7. Quick Start
+## 6. Quick Start
 
 ### Probar la API publica (desplegada en HF Spaces)
 
@@ -195,17 +170,7 @@ print(pairs[0]['text'])
 
 ---
 
-## 8. Documentacion Adicional
-
-- **Contexto integral del proyecto:** [HANDOFF.md](HANDOFF.md) - para nuevas sesiones
-- **Contexto vivo dia a dia:** [geovision_context.md](geovision_context.md)
-- **Despliegue en HF Spaces:** [docs/DEPLOY_HF_SPACES.md](docs/DEPLOY_HF_SPACES.md)
-- **Setup de entrenamiento en RunPod:** [docs/RUNPOD_SETUP.md](docs/RUNPOD_SETUP.md)
-- **Enunciado original:** [ProyectoFinal_GeoVisionCLIP_Cali.pdf](ProyectoFinal_GeoVisionCLIP_Cali.pdf)
-
----
-
-## 9. Licencia y Cita
+## 7. Licencia y Cita
 
 Proyecto academico - Universidad Autonoma de Occidente, Ingenieria de Datos e IA - 2026
 
