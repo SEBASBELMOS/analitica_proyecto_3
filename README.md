@@ -108,16 +108,16 @@ print(f"Archivos: {mf['summary']['total_files']}, GB: {mf['summary']['total_size
 | Formato raster | Zarr v2 (zarr<3 obligatorio) | LISTO |
 | Formato tabular | Parquet (snappy) | LISTO |
 | Procesamiento | Colab + NumPy + xarray + pyproj | LISTO |
-| Modelo CLIP | RemoteCLIP ViT-B/32 | EN ESPERA |
-| Texto encoder | XLM-RoBERTa multilingue | EN ESPERA |
-| SAE | PyTorch nn.Module | EN ESPERA |
-| ConvLSTM | PyTorch nn.Module | EN ESPERA |
-| Geoestadistica | PyKrige + PySAL | EN ESPERA |
-| Backend | FastAPI + Uvicorn | LISTO (mock) |
-| Frontend | React + Vite + Leaflet | PENDIENTE |
+| Modelo CLIP | RemoteCLIP ViT-B/32 | LISTO (Recall@1 = 0.6043) |
+| Texto encoder | XLM-RoBERTa multilingue | LISTO |
+| SAE | PyTorch nn.Module | LISTO (sparsity = 0.8809) |
+| ConvLSTM | PyTorch nn.Module | LISTO (R2 = 0.700 test) |
+| Geoestadistica | PyKrige + PySAL | LISTO (R2 = 0.807 LOO-CV) |
+| Backend | FastAPI + Uvicorn | LISTO (26/26 tests) |
+| Frontend | React + Vite + Leaflet | LISTO - URL publica activa |
 | Contenedor | Docker multi-stage + docker-compose | LISTO |
 | Despliegue | HuggingFace Spaces (SDK Docker) | LISTO - URL publica activa |
-| Entrenamiento | RunPod (NVIDIA RTX 4070, 12 GB VRAM) | EN ESPERA |
+| Entrenamiento | RunPod (NVIDIA RTX 3090, 24 GB VRAM) | LISTO |
 | Trazabilidad | manifest MD5 + SEED=42 | LISTO |
 
 ---
